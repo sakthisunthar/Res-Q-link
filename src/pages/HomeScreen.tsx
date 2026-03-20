@@ -50,7 +50,7 @@ const HomeScreen = () => {
               <div className="absolute inset-0 rounded-full bg-emergency/10 animate-ripple" style={{ animationDelay: '1s' }} />
 
               <button
-                onClick={() => navigate("/emergency")}
+                onClick={() => { triggerEmergencyFeedback(); navigate("/emergency"); }}
                 className="relative w-36 h-36 rounded-full bg-emergency text-emergency-foreground font-extrabold text-lg tracking-wide shadow-xl animate-emergency-pulse active:scale-95 transition-transform duration-100 flex flex-col items-center justify-center gap-1 z-10"
               >
                 <span className="text-2xl">🚨</span>
