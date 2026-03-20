@@ -8,6 +8,7 @@ import EmergencyTriggerScreen from "./pages/EmergencyTriggerScreen";
 import TrackingScreen from "./pages/TrackingScreen";
 import HospitalScreen from "./pages/HospitalScreen";
 import DashboardScreen from "./pages/DashboardScreen";
+import ProfileScreen from "./pages/ProfileScreen";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
