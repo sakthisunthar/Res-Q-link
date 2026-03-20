@@ -1,4 +1,4 @@
-import { Home, MapPin, Activity, Building2 } from "lucide-react";
+import { Home, MapPin, Activity, Building2, User } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const navItems = [
@@ -6,6 +6,7 @@ const navItems = [
   { icon: MapPin, label: "Track", path: "/tracking" },
   { icon: Activity, label: "Status", path: "/dashboard" },
   { icon: Building2, label: "Hospital", path: "/hospital" },
+  { icon: User, label: "Profile", path: "/profile" },
 ];
 
 const BottomNav = () => {

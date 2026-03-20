@@ -25,6 +25,7 @@ const App = () => (
           <Route path="/tracking" element={<TrackingScreen />} />
           <Route path="/hospital" element={<HospitalScreen />} />
           <Route path="/dashboard" element={<DashboardScreen />} />
+          <Route path="/profile" element={<ProfileScreen />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
