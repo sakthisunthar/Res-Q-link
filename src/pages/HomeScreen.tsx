@@ -2,6 +2,7 @@ import { MapPin, Clock, ChevronRight, Shield } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import MobileShell from "@/components/MobileShell";
 import BottomNav from "@/components/BottomNav";
+import { triggerEmergencyFeedback } from "@/lib/haptics";
 
 const emergencyHistory = [
   { id: 1, date: "Mar 14, 2026", type: "Cardiac", status: "Resolved", time: "14 min" },
