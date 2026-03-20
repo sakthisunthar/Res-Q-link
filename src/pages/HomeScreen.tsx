@@ -22,8 +22,17 @@ const HomeScreen = () => {
               <p className="text-xs font-medium text-muted-foreground tracking-wide uppercase">Emergency Response</p>
               <h1 className="text-xl font-extrabold text-foreground tracking-tight mt-0.5">Optimizer</h1>
             </div>
-            <div className="w-9 h-9 rounded-full bg-navy flex items-center justify-center">
-              <Shield className="w-4 h-4 text-navy-foreground" />
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => navigate("/dispatcher")}
+                className="w-9 h-9 rounded-full bg-secondary flex items-center justify-center active:scale-90 transition-transform"
+                title="Dispatcher View"
+              >
+                <Radio className="w-4 h-4 text-foreground" />
+              </button>
+              <div className="w-9 h-9 rounded-full bg-navy flex items-center justify-center">
+                <Shield className="w-4 h-4 text-navy-foreground" />
+              </div>
             </div>
           </div>
 
