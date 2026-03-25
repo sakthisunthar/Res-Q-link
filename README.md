@@ -2,11 +2,15 @@
 ResQ-link:
 A unified, real-time coordination platform that synchronizes emergency vehicles, city traffic systems, and hospital ERs.
 How It Fixes the Gaps:
-Dynamic Green Corridors: Integrates with smart traffic lights to pre-clear intersections for approaching ambulances.
-Automated Triage Communication: Live patient vitals and ETA are streamed directly to the destination hospital's dashboard.
-AI-Optimized Routing: Evaluates real-time traffic density, road closures, and weather to plot the absolute fastest route.
+Dynamic Green Corridors:
+Integrates with smart traffic lights to pre-clear intersections for approaching ambulances.
+Automated Triage Communication: 
+Live patient vitals and ETA are streamed directly to the destination hospital's dashboard.
+AI-Optimized Routing: 
+Evaluates real-time traffic density, road closures, and weather to plot the absolute fastest route.
 Existing Solutions vs. ResQ-link:
-Standard GPS (Google Maps): Provides routes, but doesn't control traffic lights or talk to hospitals.
+Standard GPS (Google Maps):
+Provides routes, but doesn't control traffic lights or talk to hospitals.
 Radio Dispatch: Slow, prone to human error, and lacks real-time data streaming.
 
 
