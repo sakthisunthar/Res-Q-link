@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# Welcome to Res-Q link
 
 TODO: Document your project here
