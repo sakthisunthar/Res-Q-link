@@ -4,9 +4,22 @@ interface MapPlaceholderProps {
   showAmbulance?: boolean;
   showRoute?: boolean;
   className?: string;
+  latitude?: number;
+  longitude?: number;
+  zoom?: number;
 }
 
-const MapPlaceholder = ({ showAmbulance, showRoute, className = "" }: MapPlaceholderProps) => {
+const MapPlaceholder = ({
+  showAmbulance,
+  showRoute,
+  className = "",
+  latitude = 28.613939,
+  longitude = 77.209023,
+  zoom = 14,
+}: MapPlaceholderProps) => {
+  const query = `${latitude},${longitude}`;
+  const googleMapsSearchUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+
   return (
     <div className={`relative bg-secondary rounded-2xl overflow-hidden ${className}`}>
       {/* Grid pattern to simulate map */}
@@ -69,6 +82,17 @@ const MapPlaceholder = ({ showAmbulance, showRoute, className = "" }: MapPlaceho
         <div className="w-8 h-8 rounded-full border-2 border-navy/20 flex items-center justify-center">
           <div className="w-1.5 h-1.5 rounded-full bg-navy/40" />
         </div>
+      </div>
+
+      <div className="absolute bottom-3 right-3 z-10">
+        <a
+          href={googleMapsSearchUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-navy text-navy-foreground px-3 py-1.5 text-xs font-semibold rounded-lg shadow-lg hover:bg-navy/90 transition"
+        >
+          Open in Google Maps
+        </a>
       </div>
     </div>
   );

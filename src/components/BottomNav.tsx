@@ -14,17 +14,17 @@ const BottomNav = () => {
   const location = useLocation();
 
   return (
-    <div className="flex items-center justify-around py-2 px-4 bg-card border-t border-border">
+    <div className="flex items-center justify-around py-3 px-4 bg-white/70 backdrop-blur-lg border-t border-white/20 shadow-lg">
       {navItems.map((item) => {
         const isActive = location.pathname === item.path;
         return (
           <button
             key={item.path}
             onClick={() => navigate(item.path)}
-            className={`flex flex-col items-center gap-0.5 py-1.5 px-3 rounded-xl transition-colors duration-200 active:scale-95 ${
+            className={`flex flex-col items-center gap-0.5 py-2 px-4 rounded-xl transition-all duration-200 active:scale-95 ${
               isActive
-                ? "text-emergency"
-                : "text-muted-foreground hover:text-foreground"
+                ? "bg-navy text-white shadow-md"
+                : "text-muted-foreground hover:text-foreground hover:bg-white/50"
             }`}
           >
             <item.icon className="w-5 h-5" strokeWidth={isActive ? 2.5 : 2} />

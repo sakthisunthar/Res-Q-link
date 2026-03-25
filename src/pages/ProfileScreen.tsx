@@ -1,4 +1,4 @@
-import { ArrowLeft, Droplets, AlertTriangle, Phone, Pencil, Heart, User, Calendar } from "lucide-react";
+import { ArrowLeft, Droplets, AlertTriangle, Phone, Pencil, Heart, User, Calendar, Settings, Users } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import MobileShell from "@/components/MobileShell";
 import BottomNav from "@/components/BottomNav";
@@ -160,6 +160,28 @@ const ProfileScreen = () => {
                   <Phone className="w-4 h-4 text-muted-foreground flex-shrink-0" />
                 </div>
               ))}
+            </div>
+
+            {/* Action Buttons */}
+            <div className="grid grid-cols-2 gap-3 mt-6">
+              <button
+                onClick={() => navigate("/medical-profile")}
+                className="flex items-center justify-center gap-2 bg-white/60 backdrop-blur-md border border-white/20 rounded-xl py-3 font-semibold text-sm text-foreground hover:bg-white/80 active:scale-95 transition-all"
+              >
+                <Heart className="w-4 h-4 text-red-600" /> Medical Info
+              </button>
+              <button
+                onClick={() => navigate("/emergency-contacts")}
+                className="flex items-center justify-center gap-2 bg-white/60 backdrop-blur-md border border-white/20 rounded-xl py-3 font-semibold text-sm text-foreground hover:bg-white/80 active:scale-95 transition-all"
+              >
+                <Users className="w-4 h-4 text-navy" /> Contacts
+              </button>
+              <button
+                onClick={() => navigate("/settings")}
+                className="flex items-center justify-center gap-2 bg-white/60 backdrop-blur-md border border-white/20 rounded-xl py-3 font-semibold text-sm text-foreground hover:bg-white/80 active:scale-95 transition-all col-span-2"
+              >
+                <Settings className="w-4 h-4 text-orange-600" /> Settings
+              </button>
             </div>
           </div>
         </div>

@@ -11,6 +11,10 @@ import DashboardScreen from "./pages/DashboardScreen";
 import ProfileScreen from "./pages/ProfileScreen";
 import DispatcherScreen from "./pages/DispatcherScreen";
 import NotFound from "./pages/NotFound";
+import MedicalProfileScreen from "./pages/MedicalProfileScreen";
+import EmergencyContactsScreen from "./pages/EmergencyContactsScreen";
+import SettingsScreen from "./pages/SettingsScreen";
+import LiveChatComponent from "./components/LiveChat";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +32,10 @@ const App = () => (
           <Route path="/dashboard" element={<DashboardScreen />} />
           <Route path="/profile" element={<ProfileScreen />} />
           <Route path="/dispatcher" element={<DispatcherScreen />} />
+          <Route path="/medical-profile" element={<MedicalProfileScreen />} />
+          <Route path="/emergency-contacts" element={<EmergencyContactsScreen />} />
+          <Route path="/settings" element={<SettingsScreen />} />
+          <Route path="/live-chat" element={<LiveChatComponent />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
@@ -36,3 +44,4 @@ const App = () => (
 );
 
 export default App;
+
